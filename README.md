@@ -46,7 +46,7 @@ Play / eval uses `-Play-v0` variants (see `config/training_defaults.env`).
 ## Project layout
 
 ```
-isaac-lab-training/
+isaac-lab-rl-workspace/
 ├── README.md                 ← this file
 ├── LICENSE                   ← MIT (this repo’s scripts/docs)
 ├── docs/
@@ -130,6 +130,8 @@ Working **`num_envs` on this PC:** **128** in [config/training_defaults.env](con
 ---
 
 ## License
+
+Copyright © 2026 Ayodele Kolawole (jkay.com@gmail.com).
 
 This repository’s project scripts and documentation are licensed under the [MIT License](LICENSE).
 

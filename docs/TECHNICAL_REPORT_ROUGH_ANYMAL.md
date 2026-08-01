@@ -1,6 +1,7 @@
 # Technical report: Rough-terrain ANYmal-C locomotion (Isaac Lab)
 
-**Author / project:** [isaac-lab-rl-workspace](https://github.com/JkayAy/isaac-lab-rl-workspace)  
+**Author:** Ayodele Kolawole (jkay.com@gmail.com)  
+**Project:** [isaac-lab-rl-workspace](https://github.com/JkayAy/isaac-lab-rl-workspace)  
 **Date:** 2026-08-01  
 **Hardware:** RTX 5060 Laptop, 8 GB VRAM · Windows 11  
 **Stack:** Isaac Sim 5.1 · Isaac Lab v2.3.2 · RSL-RL PPO (`rsl-rl-lib 3.1.2`)

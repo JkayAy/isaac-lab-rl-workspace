@@ -41,8 +41,8 @@ Paste into the research-experience / preparation section; adjust the first and l
 ## 3. One-page research summary
 
 **Title:** GPU-Parallel Reinforcement Learning for Locomotion and Manipulation in Isaac Lab  
-**Candidate:** [Your Name]  
-**Affiliation / contact:** [Email] · [GitHub / project URL] · [Optional LinkedIn / website]
+**Candidate:** Ayodele Kolawole  
+**Affiliation / contact:** jkay.com@gmail.com · https://github.com/JkayAy/isaac-lab-rl-workspace
 
 ### Motivation
 
@@ -191,7 +191,7 @@ May I share a 1-page summary and ask whether you anticipate doctoral openings in
 this area in the next admissions cycle?
 
 Best regards,
-[Name] | [Degree, university] | [Email] | [GitHub/project]
+Ayodele Kolawole | [Degree, university] | jkay.com@gmail.com | https://github.com/JkayAy/isaac-lab-rl-workspace
 ```
 
 **Do not** use this as your only RSL channel—submit the **RSL application form**.
