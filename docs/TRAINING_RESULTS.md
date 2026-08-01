@@ -63,16 +63,43 @@ scripts\play_manipulation.bat C:\Isaac\IsaacLab\logs\rsl_rl\franka_reach\2026-07
 
 ---
 
+## Phase 4 — Rough-terrain locomotion (ANYmal-C)
+
+| Field | Value |
+|-------|--------|
+| Task | `Isaac-Velocity-Rough-Anymal-C-v0` |
+| Play task | `Isaac-Velocity-Rough-Anymal-C-Play-v0` |
+| Parallel envs | **64** |
+| Iterations | **1000** |
+| Wall time | **~1453 s (~24 min)** |
+| Final mean reward (iter 999) | **~−0.43** |
+| Notes | Systems success (no OOM); policy still falls often — see write-up |
+| Write-up | [TECHNICAL_REPORT_ROUGH_ANYMAL.md](TECHNICAL_REPORT_ROUGH_ANYMAL.md) |
+
+**Checkpoint:**
+
+`C:\Isaac\IsaacLab\logs\rsl_rl\anymal_c_rough\2026-08-01_01-23-11\model_999.pt`
+
+**Train / play:**
+
+```bat
+scripts\train_locomotion_rough.bat
+scripts\play_locomotion_rough.bat C:\Isaac\IsaacLab\logs\rsl_rl\anymal_c_rough\2026-08-01_01-23-11\model_999.pt --headless
+```
+
+---
+
 ## Phase 5 — Success criteria
 
 - [x] Locomotion training ≥100 iterations without OOM (1500 @ 128 envs)
 - [x] Manipulation training ≥100 iterations without OOM (1000 @ 128 envs)
+- [x] Rough-terrain locomotion ≥100 iterations without OOM (1000 @ 64 envs)
 - [x] Checkpoints saved under `C:\Isaac\IsaacLab\logs\rsl_rl\`
 - [x] Play scripts load checkpoints (headless); use `run_app_gui.bat` for viewport
 
 ## Optional next steps
 
+- Longer rough training (2000–5000 iters) and terrain-curriculum analysis.
 - Increase `num_envs` if `nvidia-smi` shows headroom (512 not recommended on 8 GB).
-- **Rough terrain:** `Isaac-Velocity-Rough-Anymal-C-v0`, lower envs.
 - **Lift:** `Isaac-Lift-Cube-Franka-v0`.
 - Retrain longer or tune rewards if play behavior needs improvement.

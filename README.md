@@ -18,7 +18,8 @@ This repo is a thin project layer (scripts, configs, docs). Install **Isaac Sim*
 3. See **[docs/BUILD_STATUS.md](docs/BUILD_STATUS.md)** for what is already installed on this machine vs pending steps.
 4. Verify: `scripts\list_envs.bat` and `scripts\smoke_test.bat`
 5. Train:
-   - Locomotion: `scripts\train_locomotion.bat`
+   - Locomotion (flat): `scripts\train_locomotion.bat`
+   - Locomotion (rough): `scripts\train_locomotion_rough.bat`
    - Manipulation: `scripts\train_manipulation.bat`
 6. Play a checkpoint: see [docs/TRAINING_RESULTS.md](docs/TRAINING_RESULTS.md) for paths from the latest runs.
 
@@ -32,8 +33,11 @@ Defaults for parallel env count and iterations: [`config/training_defaults.env`]
 
 | Pipeline | Task ID | Robot / skill |
 |----------|---------|----------------|
-| Locomotion | `Isaac-Velocity-Flat-Anymal-C-v0` | ANYmal-C tracks velocity on flat terrain |
+| Locomotion (flat) | `Isaac-Velocity-Flat-Anymal-C-v0` | ANYmal-C tracks velocity on flat terrain |
+| Locomotion (rough) | `Isaac-Velocity-Rough-Anymal-C-v0` | ANYmal-C on rough terrain (64 envs default) |
 | Manipulation | `Isaac-Reach-Franka-v0` | Franka reaches sampled end-effector targets |
+
+Rough-terrain write-up: [docs/TECHNICAL_REPORT_ROUGH_ANYMAL.md](docs/TECHNICAL_REPORT_ROUGH_ANYMAL.md).
 
 Play / eval uses `-Play-v0` variants (see `config/training_defaults.env`).
 
@@ -102,6 +106,7 @@ Always use **`--headless`** for training on a laptop GPU to save VRAM unless deb
 - [x] Smoke test / sim env loads (headless Cartpole)
 - [x] Locomotion training (1500 iter @ 128 envs, ~22 min) — see [docs/TRAINING_RESULTS.md](docs/TRAINING_RESULTS.md)
 - [x] Manipulation training (1000 iter @ 128 envs, ~12 min)
+- [x] Rough-terrain locomotion (1000 iter @ 64 envs, ~24 min)
 - [x] Checkpoints + play scripts verified (headless)
 
 Working **`num_envs` on this PC:** **128** in [config/training_defaults.env](config/training_defaults.env).
@@ -110,7 +115,7 @@ Working **`num_envs` on this PC:** **128** in [config/training_defaults.env](con
 
 ## Optional next steps
 
-- **Rough terrain:** `Isaac-Velocity-Rough-Anymal-C-v0` (lower `num_envs`)
+- Longer rough training / curriculum analysis — see [docs/TECHNICAL_REPORT_ROUGH_ANYMAL.md](docs/TECHNICAL_REPORT_ROUGH_ANYMAL.md)
 - **Pick and lift:** `Isaac-Lift-Cube-Franka-v0`
 - **Humanoid / loco-manipulation stacks:** NVIDIA [WBC-AGILE](https://github.com/nvidia-isaac/WBC-AGILE) or LeggedManip Lab (heavier GPU/RAM)
 
