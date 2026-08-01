@@ -1,0 +1,49 @@
+# Isaac Lab upstream clone (install via scripts; do not commit)
+IsaacLab/
+
+# Python virtual environments
+env_isaaclab/
+.venv/
+venv/
+
+# Training logs and checkpoints (large)
+logs/
+**/logs/rsl_rl/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.mp4
+*.avi
+*.dmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Isaac Sim / Omniverse caches
+.cache/
+.local/share/ov/
+**/Kit/cache/
+**/extscache/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Local install noise
+isaacsim_install.log
+isaacsim_install_short.log
