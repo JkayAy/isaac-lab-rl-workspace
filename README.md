@@ -131,7 +131,7 @@ Working **`num_envs` on this PC:** **128** in [config/training_defaults.env](con
 
 ## License
 
-Copyright © 2026 Ayodele Kolawole (jkay.com@gmail.com).
+Copyright © 2026 Ayodele Kolawole (jkay.com@gmail.com) · https://ayokolawole.co.uk
 
 This repository’s project scripts and documentation are licensed under the [MIT License](LICENSE).
 

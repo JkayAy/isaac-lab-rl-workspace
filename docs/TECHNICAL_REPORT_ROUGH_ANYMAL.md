@@ -1,6 +1,7 @@
 # Technical report: Rough-terrain ANYmal-C locomotion (Isaac Lab)
 
-**Author:** Ayodele Kolawole (jkay.com@gmail.com)  
+**Author:** Ayodele Kolawole · M.Sc Artificial Intelligence  
+**Contact:** jkay.com@gmail.com · https://ayokolawole.co.uk  
 **Project:** [isaac-lab-rl-workspace](https://github.com/JkayAy/isaac-lab-rl-workspace)  
 **Date:** 2026-08-01  
 **Hardware:** RTX 5060 Laptop, 8 GB VRAM · Windows 11  

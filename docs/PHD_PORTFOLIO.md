@@ -42,7 +42,7 @@ Paste into the research-experience / preparation section; adjust the first and l
 
 **Title:** GPU-Parallel Reinforcement Learning for Locomotion and Manipulation in Isaac Lab  
 **Candidate:** Ayodele Kolawole  
-**Affiliation / contact:** jkay.com@gmail.com · https://github.com/JkayAy/isaac-lab-rl-workspace
+**Affiliation / contact:** M.Sc Artificial Intelligence · jkay.com@gmail.com · https://ayokolawole.co.uk · https://github.com/JkayAy/isaac-lab-rl-workspace
 
 ### Motivation
 
@@ -191,7 +191,7 @@ May I share a 1-page summary and ask whether you anticipate doctoral openings in
 this area in the next admissions cycle?
 
 Best regards,
-Ayodele Kolawole | [Degree, university] | jkay.com@gmail.com | https://github.com/JkayAy/isaac-lab-rl-workspace
+Ayodele Kolawole | M.Sc Artificial Intelligence | jkay.com@gmail.com | https://ayokolawole.co.uk | https://github.com/JkayAy/isaac-lab-rl-workspace
 ```
 
 **Do not** use this as your only RSL channel—submit the **RSL application form**.
